@@ -1,0 +1,28 @@
+Project Description:
+
+Data Folder: 
+ i) master counts: contains the master twitter data for year 2011 and 2012 formatted in csv
+ ii) master_clean_with_frequency: contains vulgarity/slang/hashtag words and their frequency counts for year 2011 and 2012
+
+HTMLs:
+    Final Demo is the main welcome page that shows the menu of all of our visualizations 
+    Visualizations Htmls are in stored in the folder called maps:
+        i) choropleth.html: visualization represented in a choropleth map (North America)
+        ii) pyramid.html: visualization represented in the pyramid chart that shows the frequency of each word in year 2011/2012  
+        iii) tweet_hour.html: visualization represented in a line graph that shows the frequency of each word by hour of the day
+        iv) wordCloud_tableau.html: visualization represented in a word cloud (the size is based on the frequency of each word)
+    index.html: animated word cloud using d3.js 
+
+Libraries folder contains any js files we implemented in our visualization 
+
+Sound: my_song.mps is used to add the sound functinoality to our main page - we ran into a difficulty of implementing the sound to each 
+visualization page, so we decided to keep the sound only in the main menu. The user can push the button to pause/play the music. 
+
+Python_files: all python scripts we used in the process of data cleaning/processing
+
+Challenges: the main challenge the team faced was the preprocessing of our dataset. From obtaining the massive twitter dataset to cleaning,
+we made sure that we're extracting what we need for the purpose of the analysis. With the master list of words (vulgarity/slang/hashtag), we were 
+able to process our dataset and stored them in the csv format. 
+
+Overall, we were successful in visualizing the words we chose from 2011/2012 tweets, and it was interesting to see trends of the usage 
+of such words within the timeframe. 
