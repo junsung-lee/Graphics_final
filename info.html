@@ -4,9 +4,10 @@
   <title> Background </title>
   <style>
     div {
-      width: 75%;
+      width: auto;
       padding: 5px;
       margin: 5px;
+      text-align: justify;
     }
   </style>
 </head>
@@ -16,27 +17,41 @@
     <nav>
       <ul>
           <li><a href="final_demo.html">Back to Main Page</a></li>
-          <li><a href="info.html">Project Information</a></li>
-          <li><a href="maps/wordCloud_tableau.html">Word Cloud</a></li>
-          <li><a href="index.html">Animated Cloud</a></li>
+          <!-- <li><a href="maps/wordCloud_tableau.html">Word Cloud</a></li>
+          <li><a href="index.html">Animated Cloud</a></li> -->
       </ul>
   </nav>
   </header>
 
   <h1> The Data </h1>
-  <div id="collection">This data was collected as part of a research project on slang words by Lars Hinrichs, English Professor at the University of Texas at Austin. Between 2011-2017, Dr. Hinrichs scraped random samples of English tweets based on a set of keywords (the set of slang words). He was kind enough to allow our team access to the raw data in our visualization project.
+  <div id="collection">This data was collected as part of a research project on slang words by Lars Hinrichs, English Professor at the University of Texas at Austin. Between 2011-2017, Dr. Hinrichs scraped random samples of English tweets based on a set of keywords (the set of slang words). He was kind enough to allow our team access to the raw data from 2011 and 2012 for our visualization project.
+    <p> Additionally, Dr. Hinrichs, Sarika Sabnis, and graduate student Alex Rosenfeld (Dept. of Linguistics) were in the process of conducting a research project utilizing a sample of these tweets. This project involved predicting user demographic information. As a result, some of the datasets we worked with contained predicted user demographic information; however, because not all datasets contained the same information, our team decided not to do user demographic analysis, in order to have more symmetric data. (Essentially, we filtered out this information during the data cleaning process.)  </p>
     <p> If you would like to view the datasets, please follow the Google Drive <a href="https://drive.google.com/drive/folders/1Q3EsU91KfA5zsAKxUlIsQ2QyLwDHtV5X?usp=sharing">link.</a></p>
    </div>
 
   <h2> Data Cleaning </h2>
   <div id="cleaning">
-  <p>After obtaining the raw tweets, our team filtered them based on our slang words of interest using the Pandas library in Python. We chose these words after observing which popular culture terms appeared in the frequency distribution of all words in the dataset.
-  Our notbooks can be viewed here: <a href="./Python_files/clean_master.html">1</a>, <a href="./Python_files/clean_tweets.html">2</a>, <a href="./Python_files/CS324E_Final.html">3</a>.</p>
+  <p> Our dataset contains a random sample of around 150,000 tweets from both 2011 and 2012. The data cleaning and preprocessing portion of our project took the longest, as we were dealing with raw tweets. After obtaining the raw tweets, we cleaned the large .csv files, selecting only the categories we found relevant. We to pull a random sampling of tweets from both years in the same size, since we actually had over 1 million tweets in the raw dataset. We filtered the tweets based on our slang words of interest using the Pandas library in Python. We chose these words of interest upon observing which popular culture terms appeared in the frequency distribution of all words in the dataset.
+  Our Jupyter notebooks can be viewed here: <a href="./Python_files/clean_master.html">1</a>, <a href="./Python_files/clean_tweets.html">2</a>, <a href="./Python_files/CS324E_Final.html">3</a>.</p>
   <p>Our data has three categories: vulgarities, slang words, and hashtags.</p>
 
   <p><strong>Vulgarities:</strong> This includes tweets that contain <a href="http://www.bannedwordlist.com/lists/swearWords.txt">commonly censored profanities</a>.</p>
 
-  <p><strong>Slang words:</strong> words that are not vulgarities, and which appear to be in trend. We referenced some articles about popular slang words in the given year:<a href="https://www.huffingtonpost.ca/2011/12/02/slang-words-teens_n_1113329.html"> HuffPost: Slang Words in 2011</a>, <a href="https://www.huffingtonpost.ca/2012/12/19/slang-words-2012_n_2322664.html"> HuffPost: Slang Words in 2012</a>. We found many of these words to be acronyms.</p>
+  <p><strong>Slang words:</strong> words that are not vulgarities, and which appear to be in trend. We referenced some articles about popular slang words in the given year:<a href="https://www.huffingtonpost.ca/2011/12/02/slang-words-teens_n_1113329.html"> HuffPost: Slang Words in 2011</a>, <a href="https://www.huffingtonpost.ca/2012/12/19/slang-words-2012_n_2322664.html"> HuffPost: Slang Words in 2012</a>. We found many of these words to be acronyms. Note that while some of these acronyms may reference a vulgarity (e.g. "AF", "WTF"), we elected to count them separate from vulgarities.</p>
 
-  <p><strong>Hashtags:</strong> we attempted to find the most common hashtags referenced within the dataset. The hashtags we found in the random sample did not align with many reported "Top Hashtag" lists for the given year, or even the <a href="https://yearinreview.twitter.com/en/hottopics.html">list<a> Twitter itself published at the end of 2011. Thus, these findings should be used with caution.</p>
+  <p><strong>Hashtags:</strong> we attempted to find the top hashtags referenced within the dataset. The hashtags we found in the random sample did not align with many reported "Top Hashtag" lists for the given year, or even the <a href="https://yearinreview.twitter.com/en/hottopics.html">list<a> Twitter itself published at the end of 2011. Thus, these findings should be used with caution.</p>
   </div>
+
+  <h2> Visualizations </h2>
+  <div id="visualization">
+    <p> Our visualizations were done using both Tableau and the D3 Javascript library. In this project, we show multiple ways to visualize Twitter data and other textual data. </p> </div>
+
+  <h2> Conclusions </h2>
+  <div id="conclusion">
+    <p> We observed many interesting findings in this visualization project. Usage of vulgarities was relatively high compared to other slang words, rather unsurprisingly. Several studies have been conducted on the use of vulgarities in Internet culture, and how it relates to <a href="https://aclweb.org/anthology/D18-1471">sentiment</a>. The most frequent slang word was "lol", which was actually more commonly used than a vulgarity. This is likely due to the ubiquity of the acronym, and its long existence since at least the late 1990s. Also following expected trends were longstanding acronyms like "ASAP", which had around the same frequency across both years.</p>
+    <p> Additionally, we found that the usage of newer acronyms, such as "AF" increased in usage between 2011 and 2012. As part of future work, we can track this word further, as it has still persisted into 2019. The trend we found for "swag" was also very interesting, since its frequency decreased between 2011 and 2012. Its observed popularity also follows this trend, since the word peaked usage in 2011, but significaly decreased the following year. </p>
+     <p> Lastly, in analyzing hashtags, we found that hashtags related to jobs were very popular in 2011, yet decreased in 2012. Possible events that accout for this change may involve the state of unemployment in 2011 following the recession, or perhaps the upcoming presidential election (the following year), during which the discussion of jobs and economy went up. </p>
+
+     <p> As part of future work, we would like to continue observing changes in slang words. If we can obtain more Twitter data from previous or later years, we can even begin tracking the trajectory of a word itself. We may be able to find out geo-dependent trajectories of words (e.g. "hella" spreading from California to other areas), gender-based trajectories, and more. We could even examine data outside of Twitter and branch out to other social media avenues. Furthermore, if we obtain global data, we may be able to expand our choropleth map to include statistics around the world. </p>
+   </div>
+</html>
