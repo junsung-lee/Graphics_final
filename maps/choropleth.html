@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title> Choropleth </title>
+    <style>
+      div {
+        width: 75%;
+        padding: 5px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../final_demo.html">Back to Main Page</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>How to Use:</h2>
+    <div id="instructions"
+    <p> This is a choropleth map of North America for the tweet dataset. Darker shades on the map indicate a higher frequency of usage. Use the check box menu ("Measure Names") at the top-right of the graph. You can select an individual word to view its distribution. You can also select to view by year using the check box menu at the bottom ("Year of Time Stamp").</p>
+    <p> Zoom in or out by scrolling your mouse. To move around the map, select the triangle on the lefthand side of the map, and click the "Pan" tool (or press the hotkey (F)).
+    <!-- <p> <i> This visualization was created in Tableau.</i></p> -->
+    </div>
+
+    <div class='tableauPlaceholder' id='viz1557765025132' style='position: relative'>
+      <noscript><a href='#'>
+        <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SS&#47;SSS5ZJC4R&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='path' value='shared&#47;SSS5ZJC4R' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SS&#47;SSS5ZJC4R&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1557765025132');
+      var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </body>
+</html>
