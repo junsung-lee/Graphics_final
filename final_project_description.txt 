@@ -15,10 +15,17 @@ HTMLs:
 
 Libraries folder contains any js files we implemented in our visualization
 
+Keyboard interactivity: you can search for a particular word in the list for all of the graphs by clicking the magnifying glass in the top right corner and typing in the word.
+
 Sound: my_song.mps is used to add the sound functinoality to our main page - we ran into a difficulty of implementing the sound to each
 visualization page, so we decided to keep the sound only in the main menu. The user can push the button to pause/play the music.
 
 Python_files: all python scripts we used in the process of data cleaning/processing (you can also view the html versions)
+
+Member contributions:
+Zachary - Data preprocessing, Tableau Visualizations
+Junsung - Data preprocessing, animated word Cloud
+Sarika - Data cleaning, preprocessing, sound
 
 Challenges: the main challenge the team faced was the preprocessing of our dataset. From obtaining the massive twitter dataset to cleaning,
 we made sure that we're extracting what we need for the purpose of the analysis. With the master list of words (vulgarity/slang/hashtag), we were
